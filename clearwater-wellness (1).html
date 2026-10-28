@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Clearwater Health &amp; Wellness – Care, Therapies and Workshops</title>
+<meta name="description" content="Clearwater Health &amp; Wellness offers consultations, therapies and workshops for mental health, nutrition and fitness. Book an appointment online.">
+<!-- Analytics placeholder: paste your GA4 / Plausible / Matomo snippet here (add a cookie-consent banner where the law requires it) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F9FC;--surface:#fff;--ink:#15293A;--muted:#4A6073;--line:#D5E2EC;--blue:#1D5C8A;--blue-ink:#fff;--green:#2F8F6B;--soft:#E3F1EC;--sky:#DCEBF6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1A24;--surface:#15252F;--ink:#E7F0F6;--muted:#9FB6C6;--line:#26404F;--blue:#6BB3E6;--blue-ink:#08202F;--green:#5CCB9F;--soft:#16302A;--sky:#173346;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0E1A24;--surface:#15252F;--ink:#E7F0F6;--muted:#9FB6C6;--line:#26404F;--blue:#6BB3E6;--blue-ink:#08202F;--green:#5CCB9F;--soft:#16302A;--sky:#173346;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "Nunito Sans",system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--surface);z-index:20}
+h1,h2,h3{font-family:Manrope,system-ui,sans-serif;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.2rem,6vw,3.5rem);font-weight:800}h2{font-size:clamp(1.7rem,4vw,2.3rem);font-weight:800}h3{font-size:1.15rem;font-weight:800}
+a{color:var(--blue)}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+section{padding:60px 0}.alt{background:var(--soft)}.sky{background:var(--sky)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--blue);color:var(--blue-ink);padding:8px 14px;border-radius:8px;z-index:30}.skip:focus{left:8px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--surface);border-bottom:1px solid var(--line);z-index:21}
+header .wrap{display:flex;align-items:center;gap:16px;height:62px}
+.logo{font:800 1.2rem Manrope,sans-serif;color:var(--ink);text-decoration:none;white-space:nowrap}
+nav{display:flex;gap:2px;overflow-x:auto;margin-left:auto;scrollbar-width:none}
+nav a{padding:8px 12px;border-radius:999px;text-decoration:none;color:var(--ink);white-space:nowrap}nav a:hover{background:var(--soft)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.btn{display:inline-block;background:var(--blue);color:var(--blue-ink);border:2px solid var(--blue);border-radius:12px;padding:11px 20px;font:700 1rem Manrope,sans-serif;cursor:pointer;text-decoration:none}
+.btn.o{background:transparent;color:var(--blue)}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center}
+.hero p.lead{font-size:1.2rem;color:var(--muted);max-width:50ch}
+.quick{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card p{color:var(--muted);margin:.3em 0 1em}
+.tag{display:inline-block;background:var(--soft);color:var(--ink);padding:2px 10px;border-radius:999px;font-size:.85rem}
+label{font-weight:600;display:block;margin-bottom:4px}
+input,select,textarea{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit;margin-bottom:12px}
+blockquote{margin:0}blockquote p{font-size:1.05rem;color:var(--ink)!important}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.stat{font:800 2.4rem Manrope,sans-serif;color:var(--green)}
+.price{font:800 2rem Manrope,sans-serif}
+ul.clean{padding-left:20px;margin:.4em 0}
+.slots{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.slot{background:var(--surface);color:var(--ink);border:2px solid var(--line);border-radius:10px;padding:8px 14px;font:600 1rem "Nunito Sans",sans-serif;cursor:pointer}
+.slot[aria-pressed="true"]{border-color:var(--blue);background:var(--sky)}
+details.f{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:4px 18px;margin-bottom:10px}
+details.f summary{cursor:pointer;padding:10px 0;font-weight:600}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 18px}
+.chip{background:var(--surface);color:var(--ink);border:2px solid var(--line);border-radius:999px;padding:6px 14px;font:600 .95rem "Nunito Sans",sans-serif;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--blue);color:var(--blue-ink);border-color:var(--blue)}
+.note{font-size:.9rem;color:var(--muted)}
+.ok{color:var(--green);font-weight:600}
+footer{background:var(--surface);border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.92rem}
+@media(max-width:780px){.hero,.two{grid-template-columns:1fr}.logo{font-size:1.05rem}}
+@media print{header,.noprint{display:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header><div class="wrap"><a class="logo" href="#top">Clearwater Wellness</a>
+<nav aria-label="Main"><a href="#about">About Us</a><a href="#services">Services</a><a href="#resources">Resources</a><a href="#blog">Blog</a><a href="#contact">Contact</a></nav></div></header>
+<main id="main"><span id="top"></span>
+
+<section><div class="wrap hero">
+<div><h1>Whole-person care, close to home.</h1>
+<p class="lead">Doctors, therapists and nutrition coaches work together on one plan for your body and mind. Book online in under a minute.</p>
+<svg viewBox="0 0 320 60" width="280" role="img" aria-label="Heartbeat line ending in a green leaf" style="margin-top:10px"><path d="M2 32h70l12-26 18 48 14-22h40" fill="none" stroke="#1D5C8A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M160 32c10-22 34-24 46-20-2 14-14 28-46 20z" fill="#2F8F6B"/></svg></div>
+<div class="quick"><h2 style="font-size:1.4rem">Find an appointment</h2>
+<label for="hs">What do you need?</label><select id="hs"></select>
+<a class="btn" href="#book" id="hgo" style="width:100%;text-align:center">See available times</a></div>
+</div></section>
+
+<section class="alt"><div class="wrap"><h2>Featured services</h2><div class="grid">
+<div class="card"><span class="tag">Mental health</span><h3>Talk therapy</h3><p>One-to-one sessions with a licensed therapist for stress, anxiety and low mood.</p><a class="btn o" href="#book" data-s="Talk therapy">Book a session</a></div>
+<div class="card"><span class="tag">Nutrition</span><h3>Nutrition coaching</h3><p>A practical eating plan built around your health goals and your budget.</p><a class="btn o" href="#book" data-s="Nutrition coaching">Book coaching</a></div>
+<div class="card"><span class="tag">Fitness</span><h3>Movement workshops</h3><p>Small-group classes on strength, mobility and building a routine that lasts.</p><a class="btn o" href="#book" data-s="Movement workshop">Join a workshop</a></div></div></div></section>
+
+<section><div class="wrap"><h2>What our clients say</h2><p class="note">Sample testimonials. Replace with real, consented stories.</p><div class="grid">
+<div class="card"><blockquote><p>“I finally sleep through the night. My therapist gave me small steps I could actually follow.”</p></blockquote><strong>Priya, 34</strong></div>
+<div class="card"><blockquote><p>“The nutrition plan fit my family’s meals. No strict rules, just good advice.”</p></blockquote><strong>Daniel, 47</strong></div>
+<div class="card"><blockquote><p>“The workshop made exercise feel doable after my knee surgery.”</p></blockquote><strong>Meera, 58</strong></div></div></div></section>
+
+<section class="sky"><div class="wrap"><h2>Latest news</h2><div class="grid">
+<div class="card"><span class="tag">Update</span><h3>Evening clinic hours start in November</h3><p>Mondays and Thursdays until 8 pm.</p></div>
+<div class="card"><span class="tag">Event</span><h3>Free stress-management talk</h3><p>Join us online next month. Seats are limited.</p></div>
+<div class="card"><span class="tag">Health news</span><h3>Flu and vaccine season is here</h3><p>Ask us about vaccines at your next visit.</p></div></div></div></section>
+
+<section id="about"><div class="wrap"><h2>About us</h2><div class="two"><div>
+<h3>Our mission</h3><p>To make good care easy to reach, easy to understand and kind to every person who walks in.</p>
+<h3>Core values</h3><ul class="clean"><li>Respect: your goals lead the plan.</li><li>Evidence: we use methods that are shown to work.</li><li>Teamwork: your providers talk to each other.</li></ul>
+<h3>Our story</h3><p>[Add your history: the year you opened, why you started, and key milestones.]</p></div>
+<div class="card"><h3>Our impact</h3>
+<svg viewBox="0 0 320 130" role="img" aria-label="Bar chart: 92 percent of clients would recommend us, 85 percent report better well-being after 3 months, 78 percent keep their plan after 6 months" style="width:100%">
+<g font-family="sans-serif" font-size="12" fill="currentColor"><text x="0" y="14">Would recommend us</text><text x="0" y="62">Better well-being, 3 months</text><text x="0" y="110">Keep their plan, 6 months</text></g>
+<rect x="0" y="20" width="300" height="12" rx="6" fill="#D5E2EC"/><rect x="0" y="20" width="276" height="12" rx="6" fill="#2F8F6B"/>
+<rect x="0" y="68" width="300" height="12" rx="6" fill="#D5E2EC"/><rect x="0" y="68" width="255" height="12" rx="6" fill="#1D5C8A"/>
+<rect x="0" y="116" width="300" height="12" rx="6" fill="#D5E2EC"/><rect x="0" y="116" width="234" height="12" rx="6" fill="#2F8F6B"/></svg>
+<p class="note">Sample figures for the mockup. Use your own data.</p></div></div>
+<h3 style="margin-top:30px">Meet the team</h3><div class="grid" id="team"></div></div></section>
+
+<section id="services" class="alt"><div class="wrap"><h2>Services and packages</h2>
+<div class="grid">
+<div class="card"><h3>Starter</h3><div class="price">₹499</div><p>One 30-minute consultation.</p><ul class="clean"><li>Health review</li><li>Written action plan</li></ul></div>
+<div class="card"><h3>Care Plan</h3><div class="price">₹1,999</div><p>Four sessions of therapy or coaching.</p><ul class="clean"><li>Weekly check-ins</li><li>Progress tracking</li></ul></div>
+<div class="card"><h3>Whole Wellness</h3><div class="price">₹3,499</div><p>Eight sessions plus a workshop pass.</p><ul class="clean"><li>Doctor, therapist and coach</li><li>Shared care plan</li></ul></div></div>
+<p class="note">Sample prices in Indian rupees (₹), set low to stay affordable. Add GST details, insurance and student or senior discounts here.</p>
+
+<div class="two" style="margin-top:36px"><div id="book"><h2 style="font-size:1.6rem">Book an appointment</h2>
+<form id="bf"><label for="bs">Service</label><select id="bs"></select>
+<label for="bd">Date</label><input id="bd" type="date" required>
+<div role="group" aria-label="Available times"><label>Time</label><div class="slots" id="slots"></div></div>
+<label for="bn">Full name</label><input id="bn" required autocomplete="name">
+<label for="be">Email</label><input id="be" type="email" required autocomplete="email">
+<button class="btn" type="submit">Request appointment</button><p id="bok" class="ok" role="status"></p></form></div>
+<div><h2 style="font-size:1.6rem">Frequently asked questions</h2>
+<details class="f"><summary>Do I need a referral?</summary><p>No. You can book directly for most services.</p></details>
+<details class="f"><summary>Can I have a video visit?</summary><p>Yes. Choose “video” when we confirm your time.</p></details>
+<details class="f"><summary>What if I need to cancel?</summary><p>Please tell us 24 hours ahead so another client can use the slot.</p></details>
+<details class="f"><summary>Is my information private?</summary><p>Yes. We follow health-privacy laws that apply in your region.</p></details></div></div></div></section>
+
+<section id="resources"><div class="wrap"><h2>Resources</h2><div class="two"><div>
+<h3>Library</h3><ul class="clean"><li>Guide: Eating well on a budget</li><li>Guide: Starting a walking habit</li><li>E-book: Understanding anxiety</li></ul>
+<h3>Partners and trusted links</h3><ul class="clean"><li><a href="https://www.who.int" rel="noopener">World Health Organization</a></li><li><a href="https://www.cdc.gov" rel="noopener">CDC</a></li><li><a href="https://www.nimh.nih.gov" rel="noopener">NIMH</a></li></ul></div>
+<div class="card"><h3>Printable downloads</h3><p>Open, then print or save as PDF from your browser.</p>
+<details class="f"><summary>Weekly health checklist</summary><ul class="clean"><li>☐ Water: 6 to 8 glasses a day</li><li>☐ Move 30 minutes, 5 days</li><li>☐ 7+ hours of sleep</li><li>☐ Vegetables at 2 meals a day</li><li>☐ One kind act for yourself</li></ul></details>
+<details class="f"><summary>Simple 3-day meal plan</summary><ul class="clean"><li>Day 1: oats and fruit; lentil soup; veg stir-fry with rice</li><li>Day 2: eggs and toast; chickpea salad; grilled fish, greens</li><li>Day 3: yogurt and nuts; bean wrap; vegetable curry</li></ul></details>
+<button class="btn o noprint" type="button" onclick="window.print()">Print this page</button></div></div></div></section>
+
+<section id="blog" class="alt"><div class="wrap"><h2>Blog</h2>
+<label for="bq">Search the blog</label><input id="bq" type="search" placeholder="Try “sleep” or “protein”">
+<div class="chips" id="chips" role="group" aria-label="Categories"></div>
+<div class="grid" id="posts"></div><p id="none" class="note" hidden>No posts found. Try another word or category.</p></div></section>
+
+<section id="contact"><div class="wrap two"><div><h2>Contact us</h2>
+<form id="cf"><label for="cn">Name</label><input id="cn" required autocomplete="name">
+<label for="ce">Email</label><input id="ce" type="email" required autocomplete="email">
+<label for="cm">How can we help?</label><textarea id="cm" rows="4" required></textarea>
+<button class="btn" type="submit">Send message</button><p id="cok" class="ok" role="status"></p></form>
+<p>Follow us: <a href="#">Instagram</a>, <a href="#">Facebook</a>, <a href="#">YouTube</a>, <a href="#">LinkedIn</a></p></div>
+<div><h3>Visit our clinic</h3>
+<svg viewBox="0 0 320 200" role="img" aria-label="Simple map showing the clinic at 12 Lake Road, marked with a pin" style="width:100%;border-radius:16px;border:1px solid var(--line)">
+<rect width="320" height="200" fill="#DCEBF6"/><path d="M0 120h320M0 60h320M90 0v200M220 0v200" stroke="#fff" stroke-width="14"/><path d="M0 170c60-30 120 10 320-20v50H0z" fill="#BFE0D2"/>
+<path d="M155 62c-12 0-20 8-20 19 0 14 20 36 20 36s20-22 20-36c0-11-8-19-20-19z" fill="#1D5C8A"/><circle cx="155" cy="81" r="7" fill="#fff"/></svg>
+<p><strong>12 Lake Road</strong>, Your City<br>Mon–Fri 8 am–6 pm · Sat 9 am–1 pm<br><a href="https://www.google.com/maps/search/?api=1&query=12+Lake+Road" rel="noopener">Open in Google Maps</a></p>
+<p class="note">The map is a stand-in. Embed a real map when you go live.</p></div></div></section>
+</main>
+<footer><div class="wrap">Clearwater Health &amp; Wellness is a sample brand. This site shares general information and is not medical advice. In an emergency, call your local emergency number.</div></footer>
+<script>
+var $=function(x){return document.getElementById(x)},S=["Talk therapy","Nutrition coaching","Movement workshop","General consultation"];
+var opts=S.map(function(s){return '<option>'+s+'</option>'}).join('');$('hs').innerHTML=opts;$('bs').innerHTML=opts;
+$('hgo').onclick=function(){$('bs').value=$('hs').value};
+document.querySelectorAll('[data-s]').forEach(function(a){a.onclick=function(){$('bs').value=a.dataset.s}});
+var T=[["Dr. A. Rao","General physician","Preventive care, chronic conditions"],["J. Collins, LMFT","Therapist","Anxiety, stress, couples work"],["S. Nair, RD","Dietitian","Weight, diabetes, family nutrition"]];
+function av(n){return '<svg viewBox="0 0 80 80" width="72" role="img" aria-label="Placeholder portrait of '+n+'"><circle cx="40" cy="40" r="40" fill="#DCEBF6"/><circle cx="40" cy="31" r="13" fill="#1D5C8A"/><path d="M14 72c4-18 48-18 52 0z" fill="#2F8F6B"/></svg>'}
+$('team').innerHTML=T.map(function(t){return '<div class="card">'+av(t[0])+'<h3>'+t[0]+'</h3><span class="tag">'+t[1]+'</span><p>Focus: '+t[2]+'. [Add qualifications.]</p></div>'}).join('');
+var d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());$('bd').min=d.toISOString().slice(0,10);
+var pick='';$('slots').innerHTML=["9:00 am","10:30 am","1:00 pm","3:30 pm"].map(function(t){return '<button type="button" class="slot" aria-pressed="false">'+t+'</button>'}).join('');
+document.querySelectorAll('.slot').forEach(function(b){b.onclick=function(){document.querySelectorAll('.slot').forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');pick=b.textContent}});
+$('bf').onsubmit=function(e){e.preventDefault();if(!pick){$('bok').textContent='Please choose a time.';return}$('bok').textContent='Thanks, '+$('bn').value+'. We received your request for '+$('bs').value+' on '+$('bd').value+' at '+pick+'. We will confirm by email.';};
+$('cf').onsubmit=function(e){e.preventDefault();$('cok').textContent='Thanks! We will reply within one working day.';e.target.reset()};
+var B=[["Nutrition","Five easy swaps for a healthier plate","Small changes to common meals that add fibre and cut sugar.","Oct 22, 2026"],["Mental health","How to build a wind-down routine for better sleep","Simple evening habits that calm a busy mind.","Oct 15, 2026"],["Fitness","Walking: the underrated workout","How to start, how far to go, and how to stay motivated.","Oct 8, 2026"],["Mental health","Talking to your doctor about stress","What to say, and what help is available.","Oct 1, 2026"],["Nutrition","Protein explained: how much do you need?","A plain guide to protein for different ages and goals.","Sep 24, 2026"],["Fitness","Strength training at any age","Safe ways to begin, with or without equipment.","Sep 17, 2026"]];
+var cat='All';
+function draw(){var v=$('bq').value.toLowerCase(),n=0;$('posts').innerHTML=B.filter(function(b){return(cat=='All'||b[0]==cat)&&(b.join(' ').toLowerCase().indexOf(v)>-1)}).map(function(b){n++;return '<article class="card"><span class="tag">'+b[0]+'</span><h3>'+b[1]+'</h3><p>'+b[2]+'</p><span class="note">'+b[3]+'</span></article>'}).join('');$('none').hidden=n>0}
+$('chips').innerHTML=["All","Nutrition","Mental health","Fitness"].map(function(c){return '<button type="button" class="chip" aria-pressed="'+(c=='All')+'">'+c+'</button>'}).join('');
+document.querySelectorAll('.chip').forEach(function(b){b.onclick=function(){cat=b.textContent;document.querySelectorAll('.chip').forEach(function(x){x.setAttribute('aria-pressed',x===b)});draw()}});
+$('bq').addEventListener('input',draw);draw();
+</script>
+</body>
+</html>
